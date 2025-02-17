@@ -1,0 +1,294 @@
+
+    2025-02-17T17:05:43.183Z - 
+    Ruta: POST /register?username=simon&password=contrasena123&email=correo@prueba.cl&direccion=Direccion%20donde%20vivo%20123&telefono=123123123&rol=user - 
+    Consultas: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:08:24.228Z - 
+    Ruta: POST /register?username=simon&password=contrasena123&email=correo@prueba.cl&direccion=Direccion%20donde%20vivo%20123&telefono=123123123&rol=user - 
+    Consultas: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:10:40.661Z - 
+    Ruta: POST /register?username=simon&password=contrasena123&email=correo@prueba.cl&direccion=Direccion%20donde%20vivo%20123&telefono=123123123&rol=user - 
+    Consultas: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:10:58.228Z - 
+    Ruta: POST /register?username=simon&password=contrasena123&email=correo@prueba.cl&direccion=Direccion%20donde%20vivo%20123&telefono=123123123&rol=user - 
+    Consultas: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:16:41.004Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:23:50.384Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:28:27.036Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:29:06.881Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:35:00.998Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde vivo 123","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T17:35:55.344Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde3","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T19:46:32.180Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde3","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T19:52:39.179Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"simon","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde3","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T19:54:56.926Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"carlos","password":"contrasena123","email":"correo@prueba.cl","direccion":"Direccion donde3","telefono":"123123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T19:57:14.259Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"password":"contrasena123","email":"correo@prueba.cl"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T19:58:40.457Z - 
+    Ruta: GET /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"password":"contrasena123","email":"correo@prueba.cl"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T20:00:07.536Z - 
+    Ruta: GET /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"password":"contrasena123","email":"correo@prueba.cl"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T20:00:55.831Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"password":"contrasena123","email":"correo@prueba.cl"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T20:01:30.846Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:46:55.868Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"Nombre Prueba","password":"password123","email":"","direccion":"test","telefono":"123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:46:55.893Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"testuser","password":"password123","email":"correo@prueba.cl","direccion":"Test Street 123","telefono":"123456789","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:46:56.003Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"email":"correo@inexistente.cl","password":"password123"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:46:56.017Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"email":"correo@prueba.cl","password":"password123"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:46:56.089Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:46:56.096Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:52:31.005Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"Nombre Prueba","password":"password123","email":"","direccion":"test","telefono":"123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:52:31.032Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"testuser","password":"password123","email":"correo@prueba.cl","direccion":"Test Street 123","telefono":"123456789","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:52:31.140Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"email":"correo@inexistente.cl","password":"password123"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:52:31.155Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"email":"correo@prueba.cl","password":"password123"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:52:31.226Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T21:52:31.232Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T22:21:55.161Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"Nombre Prueba","password":"password123","email":"","direccion":"test","telefono":"123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T22:21:55.190Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"testuser","password":"password123","email":"correo@prueba.cl","direccion":"Calle de Prueba 123","telefono":"123456789","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T22:21:55.319Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"email":"correo@inexistente.cl","password":"password123"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T22:21:55.335Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"email":"correo@prueba.cl","password":"password123"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T22:21:55.407Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T22:21:55.414Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T23:03:17.557Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"Nombre Prueba","password":"password123","email":"","direccion":"test","telefono":"123123","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T23:03:17.585Z - 
+    Ruta: POST /register - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"username":"testuser","password":"password123","email":"correo@prueba.cl","direccion":"Calle de Prueba 123","telefono":"123456789","rol":"user"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T23:03:17.695Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"email":"correo@inexistente.cl","password":"password123"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T23:03:17.710Z - 
+    Ruta: POST /login - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {"email":"correo@prueba.cl","password":"password123"} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T23:03:17.780Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
+
+    2025-02-17T23:03:17.786Z - 
+    Ruta: GET /usuario - 
+    Consultas: {} - 
+    Parámetros: {} - 
+    Cuerpo: {} - 
+    IP: ::ffff:127.0.0.1
