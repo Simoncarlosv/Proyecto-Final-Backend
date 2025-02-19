@@ -29,7 +29,7 @@ describe('Operaciones CRUD Usuarios', () => {
             .post('/register')
             .send({
                 username: 'testuser',
-                password: 'password123',
+                password: 'contrasena123',
                 email: 'correo@prueba.cl',
                 direccion: 'Calle de Prueba 123',
                 telefono: '123456789',
@@ -61,7 +61,7 @@ describe('Operaciones CRUD Usuarios', () => {
             .post('/login')
             .send({
                 email: 'correo@prueba.cl',
-                password: 'password123'
+                password: 'contrasena123'
             });
 
 
@@ -89,6 +89,56 @@ describe('Operaciones CRUD Usuarios', () => {
         expect(res.statusCode).toEqual(200);
         expect(res.body.length).toBeGreaterThan(0);
         expect(res.body[0]).toHaveProperty('email', 'correo@prueba.cl');
+    }); 
+});
+
+describe('Productos API', () => {
+    let productId;
+
+    // Crear un producto
+    it('Debe crear un nuevo producto', async () => {
+            const response = await request(server)
+                .post('/create')
+                .send({
+                    name: "Cerveza Corona Extra",
+                    image: "https://labarraodoo.cloudccu.cl/web/image?model=product.product&id=2601&field=image_1024",
+                    price: 9990,
+                    original_price: 14990,
+                    button_text: "Añadir",
+                    sale: true,
+                    rating: 5,
+                    description: "Cerveza mexicana refrescante y ligera.",
+                    stock: 25
+                });
+
+
+            expect(response.statusCode).toBe(201);
+            expect(response.body).toHaveProperty('id');
+            productId = response.body.id;
     });
 
+    // Obtener todos los productos
+    it('Debe obtener todos los productos', async () => {
+            const response = await request(server).get('/productos');
+
+            expect(response.statusCode).toBe(200);
+            expect(Array.isArray(response.body)).toBe(true);
+            expect(response.body.length).toBeGreaterThan(0);
+    });
+
+    // Obtener un producto por ID
+    it('Debe obtener un producto por ID', async () => {
+            const response = await request(server).get(`/productos/${productId}`);
+            
+            expect(response.statusCode).toBe(200);
+            expect(response.body).toHaveProperty('id', productId);
+    });
+
+    // Obtener productos en oferta
+    it('Debe obtener productos en oferta', async () => {
+            const response = await request(server).get('/productossale');
+            
+            expect(response.statusCode).toBe(200);
+            expect(Array.isArray(response.body)).toBe(true);
+    });
 });

@@ -1,8 +1,8 @@
-const { pool } = require('../config/db');
+const productModel = require('../models/Products');
 
-const getProductsSale = async (req, res, next) => {
+const getProductsSale = async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM products WHERE sale = true');
+        const result = await productModel.getSaleProducts();
         if (result.rows.length === 0) {
             return res.status(404).json({ message: 'No hay productos en oferta' });
         }
@@ -13,9 +13,9 @@ const getProductsSale = async (req, res, next) => {
     }
 };
 
-const getProducts = async (req, res, next) => {
+const getProducts = async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM products ORDER BY id ASC');
+        const result = await productModel.getAllProducts();
         res.json(result.rows);
     } catch (error) {
         console.error('Error en getProducts:', error);
@@ -23,14 +23,14 @@ const getProducts = async (req, res, next) => {
     }
 };
 
-const getProductById = async (req, res, next) => {
+const getProductById = async (req, res) => {
     try {
         const { id } = req.params;
         if (!id || isNaN(id)) {
             return res.status(400).json({ message: 'ID de producto inválido' });
         }
 
-        const result = await pool.query('SELECT * FROM products WHERE id = $1', [id]);
+        const result = await productModel.getProductById(id);
         if (result.rows.length === 0) {
             return res.status(404).json({ message: 'Producto no encontrado' });
         }
@@ -41,28 +41,29 @@ const getProductById = async (req, res, next) => {
     }
 };
 
-const createProduct = async (req, res, next) => {
+const createProduct = async (req, res) => {
     try {
-        const { name, description, price, stock, category, image, sale } = req.body;
+        const { name, image, price, original_price, sale, rating, description, stock = 1, button_text = 'Añadir' } = req.body;
 
         // Validaciones básicas
-        if (!name || !price || !category) {
+        if (!name || !image || !price || !original_price || sale === undefined || rating === undefined) {
             return res.status(400).json({ 
-                message: 'Nombre, precio y categoría son campos requeridos' 
+                message: 'Los campos name, image, price, original_price, sale y rating son obligatorios' 
             });
         }
 
-        const result = await pool.query(
-            'INSERT INTO products (name, description, price, stock, category, image, sale) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *',
-            [name, description, price, stock, category, image, sale]
+        // Insertar en la base de datos
+        const result = await productModel.createProduct(
+            name, image, price, original_price, button_text, sale, rating, description, stock
         );
-        
+
         res.status(201).json(result.rows[0]);
     } catch (error) {
         console.error('Error en createProduct:', error);
         res.status(500).json({ message: 'Error interno del servidor' });
     }
 };
+
 
 module.exports = {
     getProductsSale,
